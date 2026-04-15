@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Monthsary Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="icon" type="image/webp" href="./sticker.webp" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-hearts" aria-hidden="true"></div>
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <main class="app-shell">
+    <section id="questionView" class="card active" aria-labelledby="main-question">
+      <p class="date-badge">Every 16th is our monthsary</p>
+      <h1 id="main-question">Is you and Janzen Tulipan Egnisaban is celebrating monthsary?</h1>
+      <p class="subtitle">Please choose carefully, love.</p>
+
+      <div class="buttons">
+        <button id="yesBtn" class="btn btn-yes">Yes, we are</button>
+        <button id="noBtn" class="btn btn-no">Nope</button>
+      </div>
+    </section>
+
+    <section id="menuView" class="card" aria-labelledby="menu-title">
+      <h2 id="menu-title">Happy Monthsary, my love!</h2>
+      <p class="subtitle">Choose where you want to go first.</p>
+      <div class="big-buttons">
+        <button id="openPhotos" class="big-btn">Photos</button>
+        <button id="openLoveNote" class="big-btn">Why I Love You</button>
+      </div>
+      <button id="menuBack" class="text-link">Back to Question</button>
+    </section>
+
+    <section id="photosView" class="card" aria-labelledby="photos-title">
+      <h2 id="photos-title">Our Memories</h2>
+      <p class="subtitle">Our favorite moments together.</p>
+      <div class="photo-grid">
+        <div class="photo-frame"><img src="./photo_2026-04-16_00-19-46.jpg" alt="Memory 1" /></div>
+        <div class="photo-frame"><img src="./photo_2026-04-16_00-20-19.jpg" alt="Memory 2" /></div>
+        <div class="photo-frame"><img src="./photo_2026-04-16_00-19-59.jpg" alt="Memory 3" /></div>
+        <div class="photo-frame"><img src="./photo_2026-04-16_00-20-03.jpg" alt="Memory 4" /></div>
+        <div class="photo-frame"><img src="./photo_2026-04-16_00-20-06.jpg" alt="Memory 5" /></div>
+        <div class="photo-frame"><img src="./photo_2026-04-16_00-20-09.jpg" alt="Memory 6" /></div>
+        <div class="photo-frame"><img src="./photo_2026-04-16_00-20-12.jpg" alt="Memory 7" /></div>
+        <div class="photo-frame"><img src="./photo_2026-04-16_00-20-16.jpg" alt="Memory 8" /></div>
+      </div>
+      <button class="text-link goMenu">Back to Menu</button>
+    </section>
+
+    <section id="loveView" class="card" aria-labelledby="love-title">
+      <h2 id="love-title">Why I Love You</h2>
+      <div class="scroll-wrap">
+        <article class="scroll-paper">
+          <p>
+            Love,<br /><br />
+            I love you because your smile is my softest sunrise.<br />
+            I love you because you make even ordinary days feel magical.<br />
+            I love you because your heart is gentle, strong, and kind.<br />
+            I love you because you listen, understand, and care deeply.<br />
+            I love you because your laughter is my favorite melody.<br />
+            I love you because with you, I always feel at home.<br />
+            I love you because you believe in me when I forget myself.<br />
+            I love you because every 16th with you is a beautiful blessing.<br />
+            I love you because you are my allowance kasi may work kana.<br /><br />
+            Happy Monthsary, love. I love you Joshmine H. Totol. ❤️
+          </p>
+        </article>
+      </div>
+      <button class="text-link goMenu">Close Scroll</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
